@@ -5,7 +5,7 @@
 //  Created by Thomas Cool on 10/27/10.
 //  Copyright 2010 tomcool.org. All rights reserved.
 //
-
+/*
 #import "SMFScreenCapture.h"
 #import <UIKit/UIKit.h>
 #import <ImageIO/ImageIO.h>
@@ -127,7 +127,7 @@ static NSArray * ReportIOSurfaces(int minWidth, int minHeight, int searchNumber)
                 formatStr[i] = ((char*)&pixFormat)[3-i];
             }
             formatStr[4]=0;
-            if (width > minWidth && height > minHeight/*&& seed == surfaceSeedCounter*/)
+            if (width > minWidth && height > minHeight) //&& seed == surfaceSeedCounter)
             {
                 uint32_t bytesPerElement = IOSurfaceGetBytesPerElement(ref);
                 uint32_t bytesPerRow = IOSurfaceGetBytesPerRow(ref);
@@ -315,3 +315,4 @@ static int IOSurfaceAcceleratorSave(NSString *path, IOSurfaceID searchId,int min
     return [UIImagePNGRepresentation(img2) autorelease];
 }
 @end
+ */
